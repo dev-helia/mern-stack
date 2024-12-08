@@ -104,6 +104,8 @@ export const goalSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(deleteGoal.fulfilled, (state, action) => {
+        console.log("Delete payload:", action.payload); // 查看完整 payload
+        console.log("Current goals before delete:", state.goals); // 查看当前 goals
         state.isLoading = false;
         state.isSuccess = true;
         state.goals = state.goals.filter(

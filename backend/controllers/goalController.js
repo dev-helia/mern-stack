@@ -82,7 +82,8 @@ const deleteGoal = asyncHandler(async (req, res) => {
     throw new Error("User not authorized");
   }
 
-  await goal.remove();
+  // 使用新的删除方法
+  await Goal.findByIdAndDelete(req.params.id);
 
   res.status(200).json({ id: req.params.id });
 });

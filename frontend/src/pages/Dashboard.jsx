@@ -21,10 +21,11 @@ function Dashboard() {
     }
 
     if (!user) {
+      console.log("User not logged in, redirecting to login...");
       navigate("/login");
+    } else {
+      dispatch(getGoals());
     }
-
-    dispatch(getGoals());
 
     return () => {
       dispatch(reset());
@@ -34,7 +35,9 @@ function Dashboard() {
   if (isLoading) {
     return <Spinner />;
   }
-
+  if (!user) {
+    return null; // 用户未登录时不渲染 Dashboard
+  }
   return (
     <>
       <section className="heading">
