@@ -1,6 +1,6 @@
 # Learn MERN Stack Tutorial - Common Issues & Solutions
 
-This project is based on the Learn The MERN Stack tutorial on YouTube. During the implementation process, I encountered several issues that caused the code to not work as expected. Below is a summary of the problems and their solutions.
+This project is based on the [Learn The MERN Stack](https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=5) tutorial on YouTube. During the implementation process, I encountered several issues that caused the code to not work as expected. Below is a summary of the problems and their solutions.
 This repository documents common issues encountered during the development process and provides clear solutions for each.
 
 ## Table of Contents
